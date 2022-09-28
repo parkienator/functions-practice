@@ -30,6 +30,21 @@
     const para = document.createElement('p');
 
     // Add your code here
+    const names = ['Chris', 'Li Kang', 'Anne', 'Francesca', 'Mustafa', 'Tina', 'Bert', 'Jada']
+    const para = document.createElement('p');
+
+    // Add your code here
+    function random(names){
+    	let randomNumber=Math.floor(Math.random()*names.length);
+    	return randomNumber;
+    }
+
+    function chooseName(names){
+    	let name=names[random(names)];
+    	para.textContent=name;
+    }
+
+    chooseName(names);
 
     // Don't edit the code below here!
 
