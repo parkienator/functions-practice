@@ -30,7 +30,13 @@
     const para = document.createElement('p');
 
     // Add your code here
+    function chooseName(names){
+    	let name=names[Math.floor(Math.random()*names.length)];
+    	para.innerHTML=name;
+    }
 
+    chooseName(names);
+    
     // Don't edit the code below here!
 
     const section = document.querySelector('section');
